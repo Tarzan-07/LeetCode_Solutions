@@ -7,7 +7,7 @@ class Solution
     public:
     bool isPalindrome(int x)
     {
-        int a = x, rem = 0, rev = 0;
+        int a = static_cast<int> (x), rem = 0, rev = 0;
         while(a != 0)
         {
             rem = a%10;
@@ -24,7 +24,7 @@ class Solution
 int main()
 {
     Solution s;
-    if(s.isPalindrome(2048))
+    if(s.isPalindrome(20486521))
     {
         cout << "Palindrome !" << endl;
     }
